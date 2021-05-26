@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPAのサンプルアプリケーション</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    
+    <div id ="app">
+        <router-link to = "/top">トップページ</router-link>
+        <router-link to = "/users">ユーザーページ</router-link>
+        <router-view></router-view>
+    </div>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script>
+//ルートオプションを渡してルーターインスタンスを生成
+        var router = new VueRouter({
+            routes: [
+                {//ルートの定義
+                    path: '/top',
+                    component: {
+                        template: '<div>トップページ</div>'
+                    }
+                },
+                {
+                    path: '/users',
+                    component: {
+                        template: '<div>ユーザーページ</div>'
+                    }
+                }
+            ]
+        })
+        //ルーターのインスタンスをrootとなるvueインスタンスに渡す
+        var app = new Vue({
+            router: router
+        }).$mount('#app')
+    </script>
+</body>
+</html>
