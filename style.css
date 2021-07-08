@@ -1,0 +1,185 @@
+.header{
+    /*margin-top: 150px;
+    padding: 350px 0 0 1550px;
+    position: absolute;
+    transform: translate(-50%, -50%);*/
+    position: relative; /* ヘッダーを固定する */
+    top: 130px; /* 上部から配置の基準位置を決める */
+    left: 0; /* 左から配置の基準位置を決める */
+    width: 100%; /* ヘッダーの横幅を指定する */
+    height: 35px; /* ヘッダーの高さを指定する */
+    padding: 10px; /* ヘッダーの余白を指定する(上下左右) */
+    text-align: center;
+    color: #fbd26b;
+}
+ 
+/*ログインフォームのエリア内のスタイル*/
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*background: #ffffff;*/
+    text-align: center;
+    border-style: solid;
+    border-color: #707070;
+    border-width: thin;
+}
+ 
+.box{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-color: #929394;
+}
+
+/*ボーダー部分*/
+.boxContainer{
+    float: hidden;
+}
+
+.border1{
+    width: 382px;
+    height: 30px;
+    position: fixed;
+    position: relative;
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    float: left;
+    
+    background-color: #668C4A;
+}
+.border2{
+    width: 318px;
+    height: 30px;
+    position: fixed;
+    position: relative;
+    position: absolute;
+    top: 28%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    float: left;
+    
+    background-color: #A6BF4B;
+}
+.border3{
+    width: 254px;
+    height: 30px;
+    position: fixed;
+    position: relative;
+    position: absolute;
+    top: 28%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    float: left;
+    
+    background-color: #F2F0D5;
+}
+.border4{
+    width: 190px;
+    height: 30px;
+    position: fixed;
+    position: relative;
+    position: absolute;
+    top: 28%;
+    left: 56%;
+    transform: translate(-50%, -50%);
+    float: left;
+    
+    background-color: #347a06;
+}
+.border5{
+    width: 126px;
+    height: 30px;
+    position: fixed;
+    position: relative;
+    position: absolute;
+    top: 28%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+    float: left;
+    
+    background-color: #59d606;
+}
+.border6{
+    width: 61.9px;
+    height: 30px;
+    position: fixed;
+    position: relative;
+    position: absolute;
+    top: 28%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    float: left;
+    
+    background-color: #f3eea2;
+}
+
+/* ユーザーIDとパスワード入力ボックスのスタイル */
+.box input[type="text"], .box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #929394;
+    border-width: thin;
+    padding: 14px 10px;
+    width: 230px;
+    outline: none;
+    color:#929394;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+/* Loginボタンのスタイル */
+.box input[type="submit"]{
+    border: 0;
+    background: #FBD26B;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    width: 200px;
+    outline: none;
+    color: rgb(255, 255, 255);
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+/*ユーザーアイコンのデザイン*/
+.cp_iptxt1 {
+	position: relative;
+	width: 80%;
+	margin: 50px auto;
+}
+
+.cp_iptxt1 i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
+
+/*パスワードアイコン*/
+
+.cp_iptxt2 {
+	position: relative;
+	width: 80%;
+	margin: 40px auto;
+}
+
+.cp_iptxt2 i {
+	position: absolute;
+	top: 8px;
+	left: 0;
+	padding: 9px 8px;
+	transition: 0.3s;
+	color: #aaaaaa;
+}
